@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>textflow-prototype</title>
+  </head>
+  <body>
+    <script>
+      (function(){
+        try {
+          var id = 'html-init-overlay';
+          if (!document.getElementById(id)){
+            var el = document.createElement('div');
+            el.id = id;
+            el.style.position = 'fixed';
+            el.style.right = '12px';
+            el.style.top = '12px';
+            el.style.zIndex = '99999999';
+            el.style.background = 'rgba(0,0,0,0.7)';
+            el.style.color = '#fff';
+            el.style.padding = '6px 10px';
+            el.style.borderRadius = '6px';
+            el.style.fontFamily = 'sans-serif';
+            el.style.fontSize = '12px';
+            el.innerText = 'HTML loaded — waiting for JS...';
+            document.body.appendChild(el);
+          }
+        } catch(e) {
+        }
+      })();
+    </script>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
