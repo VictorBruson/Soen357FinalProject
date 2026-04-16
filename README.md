@@ -1,3 +1,6 @@
+**Had to move to new repo because old one got corrupt**
+
+
 # Project description
 
 **TextFlow** is a mobile prototype for an academic reading and study companion app. It simulates an iPhone-sized experience and helps students manage their book library, track reading progress, discover new books, and monitor study habits.
